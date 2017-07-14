@@ -4,22 +4,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace MyBPSConsoleApplication
 {
     class Program
     {
+        /// <summary>
+        /// Getting Even and Odd Number
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
+           
+           
            
             var ed = new EvenOdd();
             ed.ED();
 
-          
+            var v = "hello";
+            MessageBox(v);
+
+
         }
 
-      
-      public  class EvenOdd
+        private static string MessageBox(string v)
+        {
+             v = "hi";
+            return v;
+        }
+
+        
+
+        public  class EvenOdd
         {
             public void ED()
             {

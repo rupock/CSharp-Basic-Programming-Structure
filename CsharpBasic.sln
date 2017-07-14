@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate-EventConsoleApplic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBPSConsoleApplication", "ConsoleApplication1\MyBPSConsoleApplication.csproj", "{EAF0C9A4-8B39-4197-A386-F2C3EBC48AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBPSConsoleApplicationTests", "ConsoleApplication1Tests\MyBPSConsoleApplicationTests.csproj", "{47D1F664-2F36-4BC0-BB0E-8BA4AB17ACA1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{EAF0C9A4-8B39-4197-A386-F2C3EBC48AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAF0C9A4-8B39-4197-A386-F2C3EBC48AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAF0C9A4-8B39-4197-A386-F2C3EBC48AEA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47D1F664-2F36-4BC0-BB0E-8BA4AB17ACA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47D1F664-2F36-4BC0-BB0E-8BA4AB17ACA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47D1F664-2F36-4BC0-BB0E-8BA4AB17ACA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47D1F664-2F36-4BC0-BB0E-8BA4AB17ACA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

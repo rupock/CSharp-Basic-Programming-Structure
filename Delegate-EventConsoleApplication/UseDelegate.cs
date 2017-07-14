@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace Delegate_EventConsoleApplication
 {
 
-    class UseSelegate
+    class UseDelegate
     {
         public delegate int Calcuale(int x, int y);
         public int Add(int x, int y) => x + y;
         public int Multiply(int x, int y) => x * y;
 
-        public UseSelegate()
+        public UseDelegate()
         {
             Calcuale cal = new Calcuale(Add);
             Console.WriteLine(cal.Invoke(3,4));

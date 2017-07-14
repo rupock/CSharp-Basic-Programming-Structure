@@ -43,10 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audio.cs" />
+    <Compile Include="AudioEncoder.cs" />
+    <Compile Include="AudioEventArgs.cs" />
+    <Compile Include="MailService.cs" />
+    <Compile Include="MessageService.cs" />
     <Compile Include="Multicast.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UseSelegate.cs" />
+    <Compile Include="UseDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

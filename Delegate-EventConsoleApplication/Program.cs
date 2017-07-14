@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
+
 namespace Delegate_EventConsoleApplication
 {
     /// <summary>
@@ -21,13 +22,22 @@ namespace Delegate_EventConsoleApplication
       
         static void Main(string[] args)
         {
-           
+            
+            //################################################################
+            var audio = new Audio() { Title ="Music 9" ,TitleId=5};
+            var audioEncoder = new AudioEncoder(); //publisher
+            var mailService = new MailService();//subscriber
+            var messageService = new MessageService();//subscriber
+            audioEncoder.AudioEncoded += mailService.OnAudioEncoded;
+            audioEncoder.AudioEncoded += messageService.OnAudioEncoded;
+            audioEncoder.Encode(audio);
+            //################################################################
 
             Multicast m = new Multicast();
 
             m.Multicasts();
          
-            UseSelegate d = new UseSelegate();
+            UseDelegate d = new UseDelegate();
           
            
             /*    How to subscribe to an event
@@ -48,7 +58,7 @@ namespace Delegate_EventConsoleApplication
                 Console.ReadKey(true);
        
       
-          
+         
             //invoking delegate; delegate is calling the target method;
               InvokingDelgateTrans(7);
 
@@ -59,6 +69,11 @@ namespace Delegate_EventConsoleApplication
                 Console.WriteLine(v+ " is the square value of");
             }
         }
+
+        //private static void OnAudioEncoded(object source, EventArgs args)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         private static void C_OnChange()
         {
